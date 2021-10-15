@@ -16,3 +16,8 @@ SELECT yr, subject, winner
 SELECT winner
   FROM nobel
  WHERE yr = 1962 AND subject='Literature'
+
+ /*Show the year, subject, and name of winners for 1980 excluding Chemistry and Medicine*/
+ SELECT yr,subject,winner FROM nobel WHERE yr=1980 AND subject NOT IN ('chemistry', 'medicine') 
+
+ 
